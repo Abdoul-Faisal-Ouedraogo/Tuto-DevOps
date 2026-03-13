@@ -18,6 +18,8 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
   build:
+    # depend du djob  Explore-GitHub-Actions job
+    needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
 
